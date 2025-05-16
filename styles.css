@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+    font-size: 28px;
+    color: #1668E3;
+    height: 32px;
+    width: 206,438px;
+    max-width: 546.4px;
+}
+
+.btn {
+    color: #fff;
+    padding: 4px 16px;
+    background-color: #1668E3;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 32px;
+    border: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background: url('./images/your-hero-image.jpg') no-repeat center center/cover;
+  height: 576px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero p {
+    color: #fff;
+    /* font-weight: bolder; */
+    font-size: 40px;
+    margin: auto auto 20px 100px;
+}
+
+.search-bar {
+  background: rgba(255, 255, 255, 0.9);
+  color: #191E3B;
+  height: 72px;
+  width: 1176px;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 8px;
+  margin-top: 0px;
+}
+
+.search-bar input {
+    background-color: #FFFFFF;
+    color: #111112;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 48px;
+    width: 300rem;
+    border: 1px solid #818494;
+    padding: 16px 11px 0px 43px;
+    min-height: 48px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
