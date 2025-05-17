@@ -1,130 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FeWo-direkt Clone</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header / Navbar -->
     <header class="header">
-        <div class="container nav-container">
-            <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a id="btn" href="#">Download the app&nbsp;&nbsp;<i class="fa-solid fa-download" style="color: #1668e3;"></i></a></li>
-                    <li><a href="#">Travel planner</a></li>
-                    <li><a href="#">Register accommodation</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">My travels</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container nav-container">
+        <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a id="btn" href="#"
+                >Download the app&nbsp;&nbsp;<i
+                  class="fa-solid fa-download"
+                  style="color: #1668e3"
+                ></i
+              ></a>
+            </li>
+            <li><a href="#">Travel planner</a></li>
+            <li><a href="#">Register accommodation</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">My travels</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <p>The Whole accomodation just for you</p>
-        <div class="search-bar container">
-            <input type="text" placeholder="Where should we go?" />
-            <input type="text" placeholder="Data 24. Mai - 7. Juni" />
-            <input type="text" placeholder="Guests 2 travelers" />
-            <button class="btn">Seek</button>
+      <div class="hero-content">
+        <h1>The whole accommodation just for you</h1>
+
+        <!-- Search Form -->
+        <div class="search-form">
+          <i class="fa-solid fa-location-dot" style="color: #0d0d0d"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Where are you going?"
+          />
+          <i class="fa-regular fa-calendar" style="color: #1b1c1d"></i>
+          <input
+            type="text"
+            class="date-input"
+            placeholder="06. Sep. - 07. Sep."
+          />
+          <i class="fa-solid fa-user" style="color: #1b1c1d"></i>
+          <input type="text" class="guests-input" placeholder="2 travelers" />
+          <button class="btn btn-primary">Search</button>
         </div>
+      </div>
     </section>
 
-    <!-- Accommodation Types -->
-    <section class="types container">
-        <div class="login-prompt">
-            <p>Sign in to send a message to the host and get more details about a listing.</p>
-            <button class="btn btn-primary">Register</button>
-        </div>
-        <h2>Find accommodations to suit your taste</h2>
-        <div class="card-grid">
-            <div class="card">Holiday Home</div>
-            <div class="card">Holiday Apartment</div>
-            <div class="card">Holiday Cottage</div>
-            <div class="card">Country House</div>
-            <div class="card">Villa</div>
-        </div>
-    </section>
+    <!-- Login Prompt -->
+    <div class="container">
+      <div class="login-prompt">
+        <p>
+          Sign in to send a message to the host and get more details about a
+          listing.
+        </p>
+        <button class="btn btn-primary">Register</button>
+      </div>
 
-    <!-- Weekend Trips -->
-    <section class="weekend container">
-        <h2>Browse weekend trips</h2>
-        <div class="card-grid">
-            <!-- Add cards similar to above -->
+      <!-- Find Accommodations Section -->
+      <h2 class="section-title">Find accommodations to suit your taste</h2>
+      <div class="accommodation-grid">
+        <div class="accommodation-card">
+          <img
+            src="./images/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+            alt="Villa with pool"
+            class="card-image"
+          /><span class="label">holiday home</span>
         </div>
-    </section>
-
-    <!-- Holiday Homes of the Year -->
-    <section class="holiday-homes container">
-        <h2>Holiday Homes of the Year 2025</h2>
-        <div class="card-grid">
-            <!-- Add cards -->
+        <div class="accommodation-card">
+          <img
+            src="./images/PARTNER_Historic_Chicago_Townhouse.jpg"
+            alt="Villa with pool"
+            class="card-image"
+          /><span class="label">Holiday apartment</span>
         </div>
-    </section>
+        <div class="accommodation-card">
+          <img
+            src="./images/VRBO_APFT2_BARCELONA_THERIN_HOUSE_1_1460.jpg"
+            alt="Villa with pool"
+            class="card-image"
+          /><span class="label">holiday cottage</span>
+        </div>
+        <div class="accommodation-card">
+          <img
+            src="./images/PARTNER_Letterbox_Cottage_Cotswolds_v2.jpg"
+            alt="Villa with pool"
+            class="card-image"
+          /><span class="label">country house</span>
+        </div>
+        <div class="accommodation-card">
+          <img
+            src="./images/6981bbd6_R3.jpg"
+            alt="Villa with pool"
+            class="card-image"
+          /><span class="label">villa</span>
+        </div>
+      </div>
 
-    <!-- Footer -->
+      <!-- Weekend Trips Section -->
+      <div class="weekend-trips">
+        <h2 class="section-title">
+          Vierhöfen: Top-rated accommodations for your search
+        </h2>
+        <p class="trips-offers">
+          Browse options for <span style="font-weight: bold">June 09-10</span>
+        </p>
+
+        <div class="accommodation-grid">
+          <div class="accommodation-cd">
+            <img
+              src="./images/apart.jpg"
+              alt="Comfort home"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">10</span>
+              <span style="font-weight: bold">Unusual</span> (17 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Comfort home at Ludwigshafen am Rhein</h3>
+              <p class="card-info">2 bedrooms • 1 bathroom • 67 m²</p>
+              <p class="card-price">€90 / night</p>
+              <small>€45 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/6981bbd6_R3.jpg"
+              alt="Stunning home"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">10</span>
+              <span style="font-weight: bold">Unusual</span> (12 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Stunning home in the EPN Mannheim Park</h3>
+              <p class="card-info">1 bedroom • 1 bathroom • 50 m²</p>
+              <p class="card-price">€92 / night</p>
+              <small>€46 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/VRBO_OOH_TRUST_LISBON_HOUSE_NATACHA_WIDE_BACKDOOR_HUMM_0004.jpg"
+              alt="Cozy apartment"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">10</span>
+              <span style="font-weight: bold">Unusual</span> (46 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Cozy apartment with direct water views, balcony, and shuttle
+              </h3>
+              <p class="card-info">1 bedroom • 1 bathroom • 45 m²</p>
+              <p class="card-price">€95 / night</p>
+              <small>€47.50 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/PARTNER_Letterbox_Cottage_Cotswolds_v2.jpg"
+              alt="Charming holiday apartment"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">10</span>
+              <span style="font-weight: bold">Unusual</span> (14 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Charming holiday apartment near Europa-Park with WiFi
+              </h3>
+              <p class="card-info">1 bedroom • 1 bathroom • 55 m²</p>
+              <p class="card-price">€80 / night</p>
+              <small>€40 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/9cd7cc29.jpg"
+              alt="Cozy apartment"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">10</span>
+              <span style="font-weight: bold">Unusual</span> (46 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Cozy apartment with direct water views, balcony, and shuttle
+              </h3>
+              <p class="card-info">1 bedroom • 1 bathroom • 45 m²</p>
+              <p class="card-price">€95 / night</p>
+              <small>€47.50 per night/person</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lake and Beach Inspiration -->
+      <div class="weekend-trips">
+        <div style="display: flex; gap: 20px; margin-bottom: 20px">
+          <div style="flex: 1; position: relative">
+            <img
+              src="./images/uk-site-assets-editorial.jpg"
+              alt="Lake getaway"
+              style="width: 100%; border-radius: 8px"
+            />
+            <div
+              style="position: absolute; bottom: 20px; left: 20px; color: white"
+            >
+              <h3>Idyllic lake getaways</h3>
+              <p>Find your holiday accommodation for a summer by the water</p>
+            </div>
+          </div>
+          <div style="flex: 1; position: relative">
+            <img
+              src="./images/ca-hero-dt.jpg"
+              alt="Last minute deals"
+              style="width: 100%; border-radius: 8px"
+            />
+            <div
+              style="position: absolute; bottom: 20px; left: 20px; color: white"
+            >
+              <h3>Last minute savings</h3>
+              <p>Save on your next vacation with these three discounts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Perfect Beach Section -->
+      <div class="beach-section">
+        <h2 class="section-title">
+          Discover the perfect beach accommodation for you
+        </h2>
+        <p class="trips-offers">Find by the coast - Aug 23-Aug 25</p>
+
+        <div class="accommodation-grid">
+          <div class="accommodation-cd">
+            <img
+              src="./images/667122fe.jpg"
+              alt="Cozy cottage"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">9.2</span>
+              <span style="font-weight: bold">Wonderful</span> (77 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Airy, bright 2-story, 3-bdrm cottage near Seal Beach
+              </h3>
+              <p class="card-info">3 bedrooms • 2.5 baths</p>
+              <p class="card-price">€240 / night</p>
+              <small>€80 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/9c1cb2fd.jpg"
+              alt="Seaside vacation home"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">9.4</span>
+              <span style="font-weight: bold">Unusual</span> (109 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Our rustic, nautical vacation home is steps from the beach
+              </h3>
+              <p class="card-info">3 bedrooms • 2 bathrooms</p>
+              <p class="card-price">€185 / night</p>
+              <small>€62 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/w1131h754x0y1-dcc21919.jpg"
+              alt="Villa near beach"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">9.4</span>
+              <span style="font-weight: bold">Unusual</span> (66 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Villa Near Bibione Se de Piave private terrace garden with
+                lounge area
+              </h3>
+              <p class="card-info">2 bedrooms • 1 bathroom</p>
+              <p class="card-price">€95 / night</p>
+              <small>€48 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/d87c8d77.jpg"
+              alt="Ocean Front Condo"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">9.4</span>
+              <span style="font-weight: bold">Unusual</span> (57 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Ocean Front Condo on the sand with water views
+              </h3>
+              <p class="card-info">1 bedroom • 1 bathroom</p>
+              <p class="card-price">€199 / night</p>
+              <small>€99 per night/person</small>
+            </div>
+          </div>
+          <div class="accommodation-cd">
+            <img
+              src="./images/37131b23.jpg"
+              alt="Ocean Front Condo"
+              class="card-image"
+            />
+            <div class="rating-badge">
+              <span class="rate">9.4</span>
+              <span style="font-weight: bold">Unusual</span> (57 reviews)
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Ocean Front Condo on the sand with water views
+              </h3>
+              <p class="card-info">1 bedroom • 1 bathroom</p>
+              <p class="card-price">€199 / night</p>
+              <small>€99 per night/person</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Private Accommodation Section -->
+      <div class="private-accommodation">
+        <div class="private-content">
+          <h2 class="section-title">
+            Find private accommodation that suits you
+          </h2>
+          <p>
+            Ready to find something that perfectly matches your travel needs?
+            From exclusive villas to cozy cottages, we have vacation rentals
+            that feel just right.
+          </p>
+          <button class="btn btn-secondary" style="margin-top: 20px">
+            Find my ideal place
+          </button>
+        </div>
+        <div class="private-images">
+          <div class="private-image">
+            <img
+              src="./images/718022-0_2-near the beach.jpg"
+              alt="Private villa"
+            /><span class="label">Near the beach</span>
+          </div>
+          <div class="private-image">
+            <img
+              src="./images/718024-0_2-pets welcome.jpg"
+              alt="Private cottage"
+            /><span class="label">Pets welcome</span>
+          </div>
+          <div class="private-image">
+            <img
+              src="./images/718030-0_2-swimming pools.jpg"
+              alt="Private apartment"
+            /><span class="label">pools</span>
+          </div>
+          <div class="private-image">
+            <img
+              src="./images/718028-0_2-more than three bedrooms.jpg"
+              alt="Private apartment"
+            /><span class="label">pools</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefits Section -->
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="./images/VRBO-shield-mark.svg" alt="" />
+          </div>
+          <h3>Simply carefree</h3>
+          <p>
+            Search for your dream accommodation confidently with our secure
+            platform.
+          </p>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="./images/VRBO-globe-mark.svg" alt="" />
+          </div>
+          <h3>More special moments</h3>
+          <p>
+            Discover places to stay that create memorable experiences on every
+            trip.
+          </p>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="./images/VRBO-teapot-mark.svg" alt="" />
+          </div>
+          <h3>Trusted privacy at all times</h3>
+          <p>
+            Find properties that fit your needs while respecting your private
+            information.
+          </p>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">
+            <img src="./images/VRBO-money-mark.svg" alt="" />
+          </div>
+          <h3>More vacation for less money</h3>
+          <p>
+            Find great value accommodation options to maximize your travel
+            budget.
+          </p>
+        </div>
+      </div>
+
+      <!-- Confidence Banner -->
+      <div class="confidence-banner">
+        <div class="confidence-content">
+          <h2>Rent your accommodation with confidence with FeWo-direkt</h2>
+          <p>
+            FeWo-direkt is part of the Vrbo family, the world leader in holiday
+            homes. We offer millions of accommodations worldwide and guests with
+            optimal booking conditions.
+          </p>
+          <button
+            class="btn btn-primary"
+            style="margin-top: 20px; padding: 20px"
+          >
+            Advertise accommodation
+          </button>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-section">
+        <h2 class="about-title">Was ist FeWo-direkt?</h2>
+        <div class="about-content">
+          <p></p>
+          <p>
+            FeWo-direkt ist dein kompetenter Ansprechpartner für Urlaub in einem
+            <span style="color: #1668e3">Ferienhaus</span> oder einer
+            <span style="color: #1668e3">Ferienwohnung</span>. Als Teil von
+            Vrbo, einem der führenden Online-Marktplätze für
+            Ferienhausvermietungen, bietet dir FeWo-direkt mehr als zwei
+            Millionen einzigartige Unterkünfte, darunter Fincas, Bungalows,
+            Apartments, <span style="color: #1668e3">Ferienhütten</span> und
+            sogar <span style="color: #1668e3">Villen</span>. Sichere Zahlungen,
+            Unterstützung rund um die Uhr und die Mit-Vertrauen-Buchen-Garantie
+            machen Buchungen zum Kinderspiel. Über die benutzerfreundliche
+            Website und zahlreiche praktische Filter kannst du ohne großen
+            Aufwand deine Traumferienwohnung für dein Budget finden. So
+            verbringst du ganz bestimmt einen unvergesslichen Urlaub, der sich
+            von der Suche über die Buchung bis hin zu Aufenthalt und Abreise
+            ganz stressfrei gestaltet.
+          </p>
+        </div>
+
+        <h2 class="about-title">
+          Ferienwohnung oder Ferienhaus mieten: Das sind die Vorteile
+        </h2>
+        <div class="about-content">
+          <p>
+            Besonders Familien und Gruppen wissen die Vorteile von
+            Ferienunterkünften zu schätzen: mehr Platz, mehr Privatsphäre, mehr
+            Annehmlichkeiten. Du hast mehr Flexibilität und Freiheit in deinen
+            eigenen vier Wänden als in herkömmlichen Hotels und kannst deinen
+            Urlaub frei planen – unabhängig davon, ob du eine Städtereise machen
+            oder mit deinem <span style="color: #1668e3">Hund</span> inmitten
+            der malerischen Natur abschalten möchtest. Du suchst eine gemütliche
+            Ferienhütte in den Bergen mit Waschmaschine und
+            <span style="color: #1668e3">Whirlpool?</span> Ein
+            <span style="color: #1668e3">Strandhaus</span> am Wasser oder eine
+            große Finca im Süden mit
+            <span style="color: #1668e3">Pool</span> und voll ausgestatteter
+            Küche? Kein Problem, denn Ferienunterkünfte gibt es in allen Größen
+            und mit jeder Wunschausstattung, die dir für deinen nächsten
+            <span style="color: #1668e3">Familienurlaub</span>, Abenteuertrip
+            mit Freunden oder ein romantisches Wochenende vorschwebt.
+          </p>
+        </div>
+      </div>
+
+      <!-- Popular Destinations -->
+      <div class="destinations-section">
+        <h2 class="section-title">Popular travel destinations</h2>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Top-Reiseziele</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Einzigartige Unterkünfte</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Trendige Reiseziele in Mai</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Top-Reiseziele für Villen</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Reiseziele für Ferienwohnungen</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Reisetipps & Inspiration</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="destination-accordion">
+          <div class="destination-header">
+            <span>Beste Singer und Jahre</span>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="logo-footer"><img src="./images/logo.svg" alt="logo"></div>
-            
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>Explore FeWo-direkt</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Advertise accommodation</a></li>
-                        <li><a href="#">Book with confidence</a></li>
-                        <li><a href="#">Trust and security</a></li>
-                        <li><a href="#">Resources for partners</a></li>
-                        <li><a href="#">Holiday homes and holiday inspiration</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Pursue</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Affiliate Partner</a></li>
-                        <li><a href="#">press</a></li>
-                        <li><a href="#">General terms and conditions of business</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Statement</a></li>
-                        <li><a href="#">Reporting illegal content</a></li>
-                        <li><a href="#">Legal Notice/Contact</a></li>
-                        <li><a href="#">Responsible owner</a></li>
-                        <li><a href="#">Content guidelines and reporting content</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>The Vrbo family</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Vrbo</a></li>
-                        <li><a href="#">Abritel.fr</a></li>
-                        <li><a href="#">FeWo-direkt.de</a></li>
-                        <li><a href="#">Bookabach.co.nz</a></li>
-                        <li><a href="#">Stayz.com.au</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 HomeAway, an Expedia Group company. All rights reserved. HomeAway and the HomeAway logo are trademarks or registered trademarks of HomeAway.com, Inc.</p>
-            </div>
+      <div class="container">
+        <div class="logo-footer">
+          <img src="./images/logo.svg" alt="logo" />
         </div>
+
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Explore FeWo-direkt</h3>
+            <ul class="footer-links">
+              <li><a href="#">Advertise accommodation</a></li>
+              <li><a href="#">Book with confidence</a></li>
+              <li><a href="#">Trust and security</a></li>
+              <li><a href="#">Resources for partners</a></li>
+              <li><a href="#">Holiday homes and holiday inspiration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Pursue</h3>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Affiliate Partner</a></li>
+              <li><a href="#">press</a></li>
+              <li><a href="#">General terms and conditions of business</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Statement</a></li>
+              <li><a href="#">Reporting illegal content</a></li>
+              <li><a href="#">Legal Notice/Contact</a></li>
+              <li><a href="#">Responsible owner</a></li>
+              <li><a href="#">Content guidelines and reporting content</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>The Vrbo family</h3>
+            <ul class="footer-links">
+              <li><a href="#">Vrbo</a></li>
+              <li><a href="#">Abritel.fr</a></li>
+              <li><a href="#">FeWo-direkt.de</a></li>
+              <li><a href="#">Bookabach.co.nz</a></li>
+              <li><a href="#">Stayz.com.au</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 HomeAway, an Expedia Group company. All rights reserved.
+            HomeAway and the HomeAway logo are trademarks or registered
+            trademarks of HomeAway.com, Inc.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
